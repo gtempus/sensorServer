@@ -1,0 +1,5 @@
+$def with (pump_ac)
+<ul>
+$for power in pump_ac:
+    <li id="t$power.id">Time: $power.created - State: $power.state</li>
+</ul>

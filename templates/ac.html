@@ -1,5 +1,15 @@
 $def with (pump_ac)
-<ul>
-$for power in pump_ac:
-    <li id="t$power.id">Time: $power.created - State: $power.state</li>
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="refresh" content="5">
+    <meta charset="utf-8">
+    <title>Sump Pump AC</title>
+  </head>
+  <body>
+    <ul>
+      $for power in pump_ac:
+      <li id="t$power.id">Time: $power.created - State: $power.state</li>
+    </ul>
+  </body>
+</html>

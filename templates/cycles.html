@@ -1,5 +1,15 @@
 $def with (pump_cycles)
-<ul>
-$for pump_cycle in pump_cycles:
-    <li id="t$pump_cycle.id">Time: $pump_cycle.created - State: $pump_cycle.state</li>
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="5">
+    <title>Sump Pump Cycles</title>
+  </head>
+  <body>
+    <ul>
+      $for pump_cycle in pump_cycles:
+      <li id="t$pump_cycle.id">Time: $pump_cycle.created - State: $pump_cycle.state</li>
+    </ul>
+  </body>
+</html>

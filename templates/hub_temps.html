@@ -1,5 +1,15 @@
 $def with (temps)
-<ul>
-$for temp in temps:
-    <li id="t$temp.id">Time: $temp.created - State: $temp.state</li>
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="refresh" content="60">
+    <meta charset="utf-8">
+    <title>Hub Temp &#x2103;</title>
+  </head>
+  <body>
+    <ul>
+      $for temp in temps:
+      <li id="t$temp.id">Time: $temp.created - Temp: $temp.state &#x2103;</li>
+    </ul>
+  </body>
+</html>
